@@ -1,11 +1,11 @@
 import maplibregl from "maplibre-gl";
 
 const carte = new maplibregl.Map({
-  container: "m",    
+  container: "map",                  
   style: "https://demotiles.maplibre.org/style.json",
-  center: [45.9652533, 9.1999174,17z],
-  zoom: 12
+  center: [9.1999174, 45.9652533],  
 });
+
 new maplibregl.Marker()
-  .setLngLat([45.9652533, 9.1999174,17z])
+  .setLngLat([9.1999174, 45.9652533])   
   .addTo(carte);
