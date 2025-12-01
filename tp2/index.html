@@ -16,28 +16,31 @@
 
 <link rel="stylesheet" href="src/css/style.css">
 
-<link href="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.css" rel="stylesheet" />
-<script src="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.js"></script>
+<script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+
 
 <script type="importmap">
 {
     "imports": {
         "animejs": "./node_modules/animejs/lib/anime.es.js",
         "chart.js": "./node_modules/chart.js/dist/chart.esm.js",
-        "@kurkle/color": "./node_modules/@kurkle/color/dist/color.esm.js"
+        "@kurkle/color": "./node_modules/@kurkle/color/dist/color.esm.js",
+        "vfx-js": "https://esm.sh/@vfx-js/core"
     }
 }
 </script>
 
 <script type="module" src="./src/js/maplibre.js"></script>
 <script type="module" src="./src/js/chartjs.js"></script>
+<script type="module" src="./src/js/vfx.js"></script>
 <script src="./src/js/bootstrap.js" defer></script>
 
 </head>
 <body>
     <div class="container">
         <div class="h">Hologramme
-          <img src="assets/img/leia.png" alt="hollograme">
+          <img class="imgh" src="assets/img/leia.png" alt="hollograme">
         </div>
         <div class="ih">Interface (haut)</div>
         <div class="ad"><canvas></canvas></div>

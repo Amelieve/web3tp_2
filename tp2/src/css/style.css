@@ -19,7 +19,7 @@
 }
 
 #map {
-  width: 100%;
+  width: 400px;
   height: 400px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.5); 
@@ -27,8 +27,8 @@
   /*background: rgba(0, 150, 255, 0.35);*/
 }
 
-#map {
-  width: 100%;
+#mp {
+  width: 400px;
   height: 400px; 
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.5); 
@@ -45,6 +45,7 @@ body {
   font-family: 'Droidobesh';
   background-color: grey;
 }
+
 
 @font-face {
   font-family: 'Droidobesh';

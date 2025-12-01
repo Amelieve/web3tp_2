@@ -33,14 +33,15 @@ new maplibregl.Marker()
 
 
   const carte2 = new maplibregl.Map({ 
-    container:"mp",
+    container: "mp",
     style: "https://tiles.openfreemap.org/styles/bright",
     center: [0, 0],
-    zoom: 0,
+    zoom: 1,
     bearing: 0,
     pitch: 0
-  });
-  
-  carte.on("style.load", () => {
-    carte.setProjection({ type: "globe" });
-  });
+});
+
+carte2.on("style.load", () => {
+    carte2.setProjection({ type: "globe" });
+});
+
