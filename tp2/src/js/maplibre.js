@@ -31,3 +31,16 @@ new maplibregl.Marker()
   .addTo(carte);
 
 
+
+  const carte2 = new maplibregl.Map({ 
+    container:"mp",
+    style: "https://tiles.openfreemap.org/styles/bright",
+    center: [0, 0],
+    zoom: 0,
+    bearing: 0,
+    pitch: 0
+  });
+  
+  carte.on("style.load", () => {
+    carte.setProjection({ type: "globe" });
+  });
