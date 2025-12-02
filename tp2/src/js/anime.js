@@ -1,15 +1,58 @@
-import anime from "https://esm.sh/animejs";
+import anime from "https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.es.js";
 
-const chiffreElements = document.querySelectorAll(".bi");
 
-chiffreElements.forEach((el) => {
+const textes = [
+  "Attaque!",
+  "Défense!",
+  "Vaisseau",
+  "Ennemi",
+  "Aide",
+  "Au secours!",
+  "Héro",
+];
+
+
+const textElements1 = document.querySelectorAll(".t1");
+
+textElements1.forEach((el) => {
   setInterval(() => {
-    const randomValue = Math.floor(Math.random() * 10000);
+    const randomText = textes[Math.floor(Math.random() * textes.length)];
     anime({
       targets: el,
-      innerHTML: randomValue,
-      duration: 400,     
-      easing: "linear"
+      innerHTML: randomText,
+      opacity: [0, 1],
+      duration: 50,
     });
-  }, 800)
+  }, 800);
 });
+
+
+const textElements2 = document.querySelectorAll(".t2");
+
+textElements2.forEach((el) => {
+  setInterval(() => {
+    const randomText = textes[Math.floor(Math.random() * textes.length)];
+    anime({
+      targets: el,
+      innerHTML: randomText,
+      opacity: [0, 1],
+      duration: 50,
+    });
+  }, 800);
+});
+
+const numberElements = document.querySelectorAll(".n1");
+
+numberElements.forEach((el) => {
+  setInterval(() => {
+    const value = Math.floor(Math.random() * 9999);
+
+    anime({
+      targets: el,
+      innerHTML: value,
+      round: 1,
+      duration: 50,
+    });
+  }, 1000);
+});
+

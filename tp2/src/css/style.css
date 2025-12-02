@@ -19,8 +19,8 @@
 }
 
 #map {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 12px;
  /* box-shadow: 0 0 20px rgba(0, 200, 255, 0.5); */
   mix-blend-mode: luminosity;
@@ -44,6 +44,16 @@
 .bi {
   width: 10vw;
   text-align: center;
+}
+
+.s {
+  width:500px;
+  height:500px;
+}
+
+.imgh {
+  width:500px;
+  height:500px;
 }
 
 body {

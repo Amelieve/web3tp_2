@@ -26,7 +26,9 @@
         "animejs": "./node_modules/animejs/lib/anime.es.js",
         "chart.js": "./node_modules/chart.js/dist/chart.esm.js",
         "@kurkle/color": "./node_modules/@kurkle/color/dist/color.esm.js",
-        "vfx-js": "https://esm.sh/@vfx-js/core"
+        "vfx-js": "https://esm.sh/@vfx-js/core",
+        "typed.js": "./node_modules/typed.js/dist/typed.module.js",
+        
     }
 }
 </script>
@@ -34,20 +36,27 @@
 <script type="module" src="./src/js/maplibre.js"></script>
 <script type="module" src="./src/js/chartjs.js"></script>
 <script type="module" src="./src/js/vfx.js"></script>
+<script type="module" src="./src/js/anime.js"></script>
 <script src="./src/js/bootstrap.js" defer></script>
+<script type="module" src="./src/js/typedjs.js"></script>
 
 </head>
 <body>
     <div class="container">
-        <div class="h">Hologramme
+        <div class="h">
           <img class="imgh" src="assets/img/leia.png" alt="hollograme">
         </div>
         <div class="ih">Interface (haut)</div>
-        <div class="ad"><canvas></canvas></div>
+        <div class="ad"></div>
       
-        <div class="s">Statistiques</div>
+        <div class="s"><canvas></canvas></div>
         <div class="iv">Interface – Vaisseau</div>
-        <div class="bi">Boutons et icônes</div>
+        <div class="bi">
+         <div class="t1 text-bg-primary">texte</div>
+         <div class="t2">texte</div>
+         <div class="n1">0</div>
+        </div>
+
       
         <div id="map" class="m">Map (réf Star Wars)</div>
         <div  id="mp" class="mp">Map – Planète</div>
