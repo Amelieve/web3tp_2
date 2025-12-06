@@ -2,7 +2,7 @@ import Chart from "https://esm.sh/chart.js/auto";
 
 Chart.defaults.font.family = 'Droidobesh';
 
-let graphique = new Chart(document.querySelector("canvas"), {
+let graphique = new Chart(document.querySelector("#s"), {
   type: "radar",
   data: {
     labels: [
