@@ -63,3 +63,12 @@ let graphique = new Chart(document.querySelector("canvas"), {
     }
   }
 });
+
+setInterval(() => {
+for (let ds of graphique.data.datasets) {
+for (let i = 0; i < ds.data.length; i++) {
+ds.data[i] = Math.round(Math.random() * 40 + 10);
+    }
+  }
+graphique.update();
+ }, 1000);
