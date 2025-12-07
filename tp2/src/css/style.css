@@ -1,51 +1,58 @@
-
+/* fond = image, placement & fonts */
 html, body {
   margin:0;
   padding:0;
   width:100%;
   height:100%;
   overflow:hidden;
+   /* Mise en place du fonts dans tout le code */ 
   font-family: 'Droidobesh';
+   /* Image de fond + réglages */ 
   background-image:url("../../assets/img/fond.png");
   background-size:cover;
   background-position:center;
   background-repeat: no-repeat;
   }
-
+/* display grid + arragement colonne */
 .container {
+   /* emplacement */ 
   display: grid;
-  grid-template-columns:repeat(3,1fr);
-  grid-template-rows:repeat(3,1fr);
+ grid-template-columns:repeat(3,1fr);
+  grid-template-rows:2fr 1fr 1fr;
   padding: 10px;
   gap: 10px;
   width: 100vw;
   height: 100vh;   
   box-sizing:border-box;
 }
-
+/* interieur divisions: couleur texte et emplacement */
 .container div {
-  border: 2px solid white;
+ /* emplacement */ 
   display:flex;
   justify-content:center;
   align-items:center;
+  /* esthétique */ 
   padding: 20px;
-  color: white;
+ color: white;
   text-align: center;
   font-size: 20px;
   width:100%;
-  height:100%;
   box-sizing:border-box;
 }
-
+/* taille pour les images et canvas */
 .container img,
 .container canvas {
+   /* emplacement */ 
   width: 100%;
   height: 100%;
+  /* esthétique */ 
   object-fit: cover;
   border-radius: 12px;
 }
 
+/* taille pour ma div avec texte et musique */
 .bi {
+  /* emplacement */ 
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -54,34 +61,44 @@ html, body {
   height:100%;
 }
 
-
+/* taille pour la div du radar */ 
 .r {
+  /* emplacement */ 
   width: 100%;
   height: 100%;
   position: relative; 
 }
 
+/* taille image de fond du radar */
 .r .radar {
+  /* emplacement */ 
   width: 100%;
   height: 100%;
   display: block;
 }
 
+/* taille + creation/couleur de la ligne du radar */
 .r .ligne {
+  /* emplacement */ 
   position: absolute;
   width: 35%;      
   height: 1px;    
   transform-origin: 100% 50%;
+  /* emplacement précise */
   top: 45%;
   left: 15%;
 }
 
+/* couleur bootstrap icons + taille */
 .iv i {
+  /* esthétique */ 
   font-size: 100px;   
   color: white;    
 }
 
+/* esthetique bouton de musique */
 .m1  {
+  /* esthétique */ 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -89,14 +106,17 @@ html, body {
   font-size: 16px;
 }
 
+/* esthetique map */
 #mp {
   mix-blend-mode:luminosity; 
 }
 
+/* esthetique map */
 #map {
   mix-blend-mode:luminosity; 
 }
 
+/* Installation fonts */
 @font-face {
   font-family: 'Droidobesh';
   src: url('../../assets/fonts/droidobesh-depot-font/DroidobeshDepot-gxmVE.otf') format('opentype');
