@@ -56,3 +56,13 @@ numberElements.forEach((el) => {
   }, 1000);
 });
 
+
+anime({
+  targets: '.ligne',
+  rotate: '360deg',    // 👈 rotation correcte
+  duration: 2000,      // 2 secondes
+  easing: 'linear',
+  loop: true           // tourne en boucle
+});
+
+

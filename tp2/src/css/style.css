@@ -51,6 +51,34 @@
   height:500px;
 }
 
+
+.r {
+  width: 500px;
+  height: 500px;
+  position: relative; 
+}
+
+.r .radar {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.r .ligne {
+  position: absolute;
+  width: 50%;      
+  height: 0.1px;    
+  background-color: rgb(47, 113, 212); 
+  transform-origin: 100% 50%;
+  top: 45%;
+  left: 0%;
+}
+
+
+
+
+
+
 .imgh {
   width:500px;
   height:500px;
