@@ -59,10 +59,29 @@ numberElements.forEach((el) => {
 
 anime({
   targets: '.ligne',
-  rotate: '360deg',    // 👈 rotation correcte
-  duration: 2000,      // 2 secondes
+  rotate: '360deg',    
+  duration: 2000,      
   easing: 'linear',
-  loop: true           // tourne en boucle
+  loop: true        
 });
+
+
+document.head.insertAdjacentHTML(
+  "beforeend",
+  "<style>.iv i { display: inline-block; }</style>"
+);
+
+const icone = document.querySelector(".iv i");
+icone.addEventListener("click", () => {
+  anime({
+    targets: icone,
+    translateX: [0, 24,15,-15],
+    translateY: [0, 24,75,50],
+    duration: 600,
+    easing: "easeInOutSine",
+    direction: "alternate",
+  });
+});
+
 
 
